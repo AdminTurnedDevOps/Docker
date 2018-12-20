@@ -1,0 +1,12 @@
+# To build this and give the name an image do the following
+# docker build -t pythondev:1.0 /path/to/dockerfile
+# Ensure that your Dockerfile is in a directory by itself or it'll parse through everything in your current directory
+
+FROM centos:7
+MAINTAINER Michael
+
+RUN yum -y update
+RUN yum -y install yum-utils
+RUN yum -y groupinstall development
+RUN yum -y install https://centos7.iuscommunity.org/ius-release.rpm
+RUN yum -y install python36u
