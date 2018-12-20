@@ -47,4 +47,5 @@ name = sys.argv[1]
 image = sys.argv[2]
 file_path = sys.argv[3]
 
-k8s_manifest(name, image, file_path)
+if __name__ == '__main__'
+    k8s_manifest(name, image, file_path)
