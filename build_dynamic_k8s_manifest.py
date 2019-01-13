@@ -2,7 +2,6 @@ import json
 import os
 import sys
 
-
 def k8s_manifest(*kwargs):
     template = """apiVersion: apps/v1
     kind: Deployment
